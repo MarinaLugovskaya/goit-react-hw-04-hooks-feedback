@@ -1,7 +1,7 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 export default function FeedbackOptions({ options, onLeaveFeedback }) {
-  return options.map(option => (
+  return options.map((option) => (
     <button type="button" key={option} onClick={() => onLeaveFeedback(option)}>
       {option}
     </button>
